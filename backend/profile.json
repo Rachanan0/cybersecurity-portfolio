@@ -1,0 +1,22 @@
+{
+"name":"Rachana",
+"role":"SOC Analyst and Cybersecurity Graduate",
+"skills":[
+"Splunk",
+"Wazuh",
+"SIEM",
+"Threat Hunting",
+"MITRE ATT&CK",
+"Python",
+"Wireshark",
+"Nmap",
+"Linux"
+],
+"projects":[
+"AI-Powered SOC Assistant",
+"PhishCatcher"
+],
+"achievement":[
+"TryHackMe Top 9% Global Ranking"
+]
+}

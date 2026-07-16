@@ -1,0 +1,130 @@
+.mitre {
+
+    padding:80px 20px;
+
+    background:#050816;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+.mitre h2 {
+
+    font-size:40px;
+
+    color:#00ffff;
+
+
+    text-shadow:
+
+    0 0 20px #00ffff;
+
+}
+
+
+
+.mitre-description {
+
+    color:#cbd5e1;
+
+    max-width:700px;
+
+    margin:20px auto 50px;
+
+    line-height:1.6;
+
+}
+
+
+
+.mitre-container {
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+
+    gap:25px;
+
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+
+
+.mitre-card {
+
+
+    padding:30px;
+
+
+    background:
+
+    rgba(255,255,255,0.08);
+
+
+    backdrop-filter:blur(15px);
+
+
+    border-radius:25px;
+
+
+    border:
+
+    1px solid rgba(0,255,255,0.3);
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+.mitre-card span {
+
+
+    color:#00ffff;
+
+    font-size:18px;
+
+    font-weight:800;
+
+
+}
+
+
+
+.mitre-card h3 {
+
+
+    margin-top:15px;
+
+    font-size:20px;
+
+    color:white;
+
+
+}
+
+
+
+.mitre-card:hover {
+
+
+    box-shadow:
+
+    0 0 30px rgba(0,255,255,0.5);
+
+
+}

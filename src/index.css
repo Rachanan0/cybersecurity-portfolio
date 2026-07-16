@@ -1,0 +1,254 @@
+/* =========================
+   GLOBAL CYBER THEME
+========================= */
+
+:root {
+
+    --bg:#050816;
+
+    --card:rgba(255,255,255,0.08);
+
+    --text:#cbd5e1;
+
+    --heading:#ffffff;
+
+    --accent:#00ffff;
+
+    --purple:#8a2be2;
+
+    --border:rgba(255,255,255,0.18);
+
+
+    font-family:
+    "Inter",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+
+    color:white;
+
+    background:#050816;
+
+    font-synthesis:none;
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+
+
+/* =========================
+   RESET
+========================= */
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+html {
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body {
+
+    min-height:100vh;
+
+    background:#050816;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* =========================
+   ROOT
+========================= */
+
+
+#root {
+
+    width:100%;
+
+    min-height:100vh;
+
+}
+
+
+
+/* =========================
+   CYBER GRID BACKGROUND
+========================= */
+
+
+body::before {
+
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+
+    background-image:
+
+    linear-gradient(
+    rgba(0,255,255,0.05) 1px,
+    transparent 1px
+    ),
+
+
+    linear-gradient(
+    90deg,
+    rgba(0,255,255,0.05) 1px,
+    transparent 1px
+    );
+
+
+    background-size:
+
+    40px 40px;
+
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+
+
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+
+h1,
+h2,
+h3 {
+
+
+    color:white;
+
+    font-weight:800;
+
+}
+
+
+
+h2 {
+
+
+    letter-spacing:2px;
+
+}
+
+
+
+
+
+/* =========================
+   LINKS
+========================= */
+
+
+a {
+
+    text-decoration:none;
+
+}
+
+
+
+/* =========================
+   SECTION SETTINGS
+========================= */
+
+
+section {
+
+
+    scroll-margin-top:90px;
+
+}
+
+
+
+
+
+/* =========================
+   SELECTION
+========================= */
+
+
+::selection {
+
+
+    background:#00ffff;
+
+    color:#020617;
+
+}
+
+
+
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+
+::-webkit-scrollbar {
+
+
+    width:10px;
+
+}
+
+
+
+::-webkit-scrollbar-track {
+
+
+    background:#020617;
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+
+
+    background:
+
+    linear-gradient(
+    #00ffff,
+    #8a2be2
+    );
+
+
+    border-radius:20px;
+
+}

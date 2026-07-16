@@ -1,0 +1,246 @@
+.metrics {
+
+    padding:80px 20px;
+
+    background:#050816;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+/* Section Heading */
+
+.metrics h2 {
+
+    font-size:40px;
+
+    color:#00ffff;
+
+    margin-bottom:40px;
+
+    text-shadow:
+    0 0 20px #00ffff;
+
+}
+
+
+
+/* Metrics Cards */
+
+.metrics-container {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:stretch;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.metric-card {
+
+    width:230px;
+
+    min-height:160px;
+
+    padding:30px 20px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    background:
+
+    rgba(255,255,255,0.08);
+
+
+    backdrop-filter:blur(15px);
+
+
+    border-radius:25px;
+
+
+    border:
+
+    1px solid rgba(0,255,255,0.3);
+
+
+    box-shadow:
+
+    0 0 25px rgba(0,255,255,0.15);
+
+
+    transition:0.3s;
+
+}
+
+
+
+.metric-card:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 0 35px rgba(0,255,255,0.4);
+
+}
+
+
+
+/* Number */
+
+.metric-card h3 {
+
+    font-size:38px;
+
+    color:#00ffff;
+
+    margin:0 0 12px;
+
+    white-space:nowrap;
+
+}
+
+
+
+/* Description */
+
+.metric-card p {
+
+    color:#cbd5e1;
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    max-width:180px;
+
+}
+
+
+
+
+
+/* Security Arsenal */
+
+.arsenal-title {
+
+    margin-top:80px;
+
+}
+
+
+
+.arsenal-container {
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+
+
+.arsenal-container span {
+
+    padding:12px 22px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+    rgba(0,255,255,0.12);
+
+
+    border:
+
+    1px solid #00ffff;
+
+
+    color:white;
+
+
+    font-weight:600;
+
+
+    transition:0.3s;
+
+}
+
+
+
+.arsenal-container span:hover {
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 0 20px #00ffff;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:700px){
+
+
+    .metrics h2 {
+
+        font-size:32px;
+
+    }
+
+
+    .metric-card {
+
+        width:90%;
+
+    }
+
+}
+.verify-link {
+
+    margin-top:15px;
+
+    color:#00ffff;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+
+.verify-link:hover {
+
+    text-shadow:
+    0 0 15px #00ffff;
+
+}

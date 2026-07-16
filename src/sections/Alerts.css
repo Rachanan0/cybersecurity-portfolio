@@ -1,0 +1,200 @@
+.alerts {
+
+
+padding:80px 20px;
+
+
+background:#050816;
+
+
+text-align:center;
+
+
+color:white;
+
+
+}
+
+
+
+.alerts h2 {
+
+
+font-size:40px;
+
+
+color:#00ffff;
+
+
+text-shadow:
+
+0 0 20px #00ffff;
+
+
+}
+
+
+
+.alerts-desc {
+
+
+max-width:700px;
+
+
+margin:20px auto 50px;
+
+
+color:#cbd5e1;
+
+
+}
+
+
+
+.alerts-container {
+
+
+display:flex;
+
+
+justify-content:center;
+
+
+gap:25px;
+
+
+flex-wrap:wrap;
+
+
+}
+
+
+
+.alert-card {
+
+
+width:220px;
+
+
+padding:30px;
+
+
+border-radius:25px;
+
+
+background:
+
+rgba(255,255,255,0.08);
+
+
+border:
+
+1px solid rgba(255,255,255,0.2);
+
+
+backdrop-filter:blur(15px);
+
+
+}
+
+
+
+.alert-card h3 {
+
+
+font-size:18px;
+
+
+}
+
+
+
+.alert-number {
+
+
+font-size:50px;
+
+
+font-weight:900;
+
+
+margin:15px;
+
+
+color:white;
+
+
+}
+
+
+
+.alert-card p {
+
+
+color:#cbd5e1;
+
+
+}
+
+
+
+/* Severity Glow */
+
+
+.CRITICAL {
+
+
+border-color:#ef4444;
+
+
+box-shadow:
+
+0 0 30px rgba(239,68,68,0.3);
+
+
+}
+
+
+
+.HIGH {
+
+
+border-color:#f97316;
+
+
+box-shadow:
+
+0 0 30px rgba(249,115,22,0.3);
+
+
+}
+
+
+
+.MEDIUM {
+
+
+border-color:#eab308;
+
+
+box-shadow:
+
+0 0 30px rgba(234,179,8,0.3);
+
+
+}
+
+
+
+.LOW {
+
+
+border-color:#22c55e;
+
+
+box-shadow:
+
+0 0 30px rgba(34,197,94,0.3);
+
+
+}

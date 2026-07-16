@@ -1,0 +1,410 @@
+.hero {
+
+
+    min-height:100vh;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    background:#050816;
+
+
+    padding:40px 20px;
+
+
+}
+
+
+
+/* Aurora */
+
+.aurora {
+
+
+    position:absolute;
+
+
+    width:700px;
+
+
+    height:700px;
+
+
+    background:
+
+    radial-gradient(
+    circle,
+    #00ffff,
+    transparent 60%
+    );
+
+
+    filter:blur(120px);
+
+
+    animation:move 8s infinite alternate;
+
+
+}
+
+
+
+@keyframes move {
+
+
+from{
+
+transform:translate(-200px,-100px);
+
+}
+
+
+to{
+
+transform:translate(200px,100px);
+
+}
+
+
+}
+
+
+
+
+
+/* Layout */
+
+.hero-container {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    gap:60px;
+
+
+    width:100%;
+
+
+    max-width:1200px;
+
+
+}
+
+
+
+
+
+/* Card */
+
+
+.hero-card {
+
+
+    width:600px;
+
+
+    padding:40px;
+
+
+    background:
+
+    rgba(255,255,255,0.08);
+
+
+    backdrop-filter:blur(20px);
+
+
+    border-radius:30px;
+
+
+    border:
+
+    1px solid rgba(0,255,255,0.25);
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+    box-shadow:
+
+    0 0 40px rgba(0,255,255,0.15);
+
+
+}
+
+
+
+
+
+/* Profile */
+
+
+.profile-wrapper {
+
+
+    width:140px;
+
+
+    height:140px;
+
+
+    margin:auto;
+
+
+    padding:5px;
+
+
+    border-radius:50%;
+
+
+    background:
+
+    linear-gradient(
+    45deg,
+    #00ffff,
+    #8a2be2
+    );
+
+
+}
+
+
+
+.profile-wrapper img {
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+    border-radius:50%;
+
+
+}
+
+
+
+
+
+/* Name */
+
+
+.hero-name {
+
+
+    font-size:52px;
+
+
+    font-weight:900;
+
+
+    letter-spacing:2px;
+
+
+    margin:20px 0 10px;
+
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #00ffff,
+    #8a2be2
+    );
+
+
+    -webkit-background-clip:text;
+
+
+    -webkit-text-fill-color:transparent;
+
+
+}
+
+
+
+
+
+.hero-role {
+
+
+    color:#00ffff;
+
+
+    font-size:24px;
+
+
+}
+
+
+
+
+
+.hero-card p {
+
+
+    color:#cbd5e1;
+
+
+    line-height:1.6;
+
+
+}
+
+
+
+
+
+/* Badges */
+
+
+.badges {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    flex-wrap:wrap;
+
+
+    gap:12px;
+
+
+    margin:25px 0;
+
+
+}
+
+
+
+.badges span {
+
+
+    padding:10px 18px;
+
+
+    border-radius:20px;
+
+
+    background:
+
+    rgba(0,255,255,0.12);
+
+
+    border:
+
+    1px solid #00ffff;
+
+
+}
+
+
+
+
+
+/* Buttons */
+
+
+.buttons {
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:15px;
+
+
+}
+
+
+
+.buttons a {
+
+
+    padding:12px 25px;
+
+
+    border-radius:25px;
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+    background:
+
+    linear-gradient(
+    45deg,
+    #2563eb,
+    #9333ea
+    );
+
+
+}
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:900px){
+
+
+.hero-container{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.hero-card{
+
+
+    width:95%;
+
+
+}
+
+
+}
