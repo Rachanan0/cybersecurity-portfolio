@@ -109,4 +109,108 @@ Tools and technologies:
 ---
 
 # 📂 Project Structure
+cybersecurity-portfolio/
+
+│
+├── backend/
+│ ├── app.py
+│ └── profile.json
+│
+├── src/
+│ ├── components/
+│ │ ├── AIChatbot.jsx
+│ │ └── SOCTerminal.jsx
+│ │
+│ ├── sections/
+│ │ ├── Hero.jsx
+│ │ ├── Projects.jsx
+│ │ ├── MITRE.jsx
+│ │ └── Contact.jsx
+│ │
+│ └── App.jsx
+│
+└── package.json
+
+
+---
+
+# ⚙️ Installation
+
+## Frontend Setup
+
+Clone repository:
+
+```bash
+git clone https://github.com/Rachanan0/cybersecurity-portfolio.git
+Go to project:
+
+cd cybersecurity-portfolio
+
+Install dependencies:
+
+npm install
+
+Run frontend:
+
+npm run dev
+Backend Setup
+
+Go to backend:
+
+cd backend
+
+Install requirements:
+
+pip install flask flask-cors requests
+
+Run:
+
+python app.py
+
+Backend runs on:
+
+http://localhost:5000
+👩‍💻 About Me
+
+I am a Cybersecurity graduate focused on Security Operations, threat detection, SIEM technologies, and AI-driven security automation.
+
+Areas of interest:
+
+SOC Analyst
+Threat Detection
+Blue Team Operations
+Incident Response
+Security Automation
+📌 Featured Projects
+🤖 AI-Powered SOC Assistant
+
+Features:
+
+SIEM log analysis
+Threat detection workflow
+MITRE ATT&CK mapping
+AI-assisted incident reporting
+🎣 PhishCatcher
+
+Machine learning based phishing detection system using URL analysis and classification models.
+
+📫 Connect
+
+GitHub:
+https://github.com/Rachanan0
+
+LinkedIn:
+https://www.linkedin.com/in/rachana01/
+
+⭐ If you find this project interesting, feel free to explore the repository.
+
+
+After replacing:
+
+```powershell
+git add README.md
+git commit -m "Improved README for recruiters"
+git push
+
+Then your GitHub repository will look much more professional. 🚀
 
