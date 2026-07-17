@@ -3,10 +3,12 @@ import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Metrics from "./sections/Metrics";
+import Skills from "./sections/Skills";
 import Alerts from "./sections/Alerts";
 import MITRE from "./sections/MITRE";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
+
 import Footer from "./sections/Footer";
 import AIChatbot from "./components/AIChatbot";
 
@@ -25,9 +27,9 @@ function App() {
 
         <About />
 
-        <AIChatbot />
-
         <Metrics />
+
+        <Skills />
 
         <Alerts />
 
@@ -39,6 +41,8 @@ function App() {
 
       </main>
 
+
+      <AIChatbot />
 
       <Footer />
 

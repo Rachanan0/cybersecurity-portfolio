@@ -1,58 +1,67 @@
+import { useState } from "react";
 import "./Navbar.css";
 
 export default function Navbar(){
 
-return(
+  const [open, setOpen] = useState(false);
 
-<nav className="navbar">
+  return(
 
-
-<div className="logo">
-
-Nunemunthala Rachana<span>.</span>
-
-</div>
+    <nav className="navbar">
 
 
-
-<div className="nav-links">
-
-
-<a href="#home">
-Home
-</a>
+      <div className="logo">
+        Nunemunthala Rachana<span>.</span>
+      </div>
 
 
-<a href="#metrics">
-SOC Metrics
-</a>
+      <button 
+        className="menu-btn"
+        onClick={() => setOpen(!open)}
+      >
+        ☰
+      </button>
 
 
-<a href="#mitre">
-MITRE
-</a>
+
+      <div className={`nav-links ${open ? "active" : ""}`}>
 
 
-<a href="#about">
-About
-</a>
+        <a href="#home" onClick={()=>setOpen(false)}>
+          Home
+        </a>
 
 
-<a href="#projects">
-Projects
-</a>
+        <a href="#mitre" onClick={()=>setOpen(false)}>
+          MITRE
+        </a>
 
 
-<a href="#contact">
-Contact
-</a>
+        <a href="#about" onClick={()=>setOpen(false)}>
+          About
+        </a>
 
 
-</div>
+        <a href="#skills" onClick={()=>setOpen(false)}>
+          Skills
+        </a>
 
 
-</nav>
+        <a href="#projects" onClick={()=>setOpen(false)}>
+          Projects
+        </a>
 
-);
+
+        <a href="#contact" onClick={()=>setOpen(false)}>
+          Contact
+        </a>
+
+
+      </div>
+
+
+    </nav>
+
+  );
 
 }

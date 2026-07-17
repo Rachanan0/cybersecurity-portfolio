@@ -1,0 +1,19 @@
+{
+  "name": "Rachana",
+  "role": "SOC Analyst | AI Security",
+  "about": "Rachana is a Cybersecurity graduate specializing in Security Operations, threat detection, SIEM monitoring, and AI-powered security automation.",
+  "skills": [
+    "Splunk",
+    "Wazuh",
+    "MITRE ATT&CK",
+    "Python",
+    "Threat Detection",
+    "Incident Response",
+    "AI Security"
+  ],
+  "projects": [
+    "AI-Powered SOC Assistant",
+    "PhishCatcher Chrome Extension"
+  ],
+  "contact": "Available for SOC Analyst opportunities"
+}

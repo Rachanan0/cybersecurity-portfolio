@@ -1,398 +1,243 @@
 .hero {
-
-
-    min-height:100vh;
-
-
-    display:flex;
-
-
-    align-items:center;
-
-
-    justify-content:center;
-
-
-    position:relative;
-
-
-    overflow:hidden;
-
-
-    background:#050816;
-
-
-    padding:40px 20px;
-
-
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: #050816;
+    padding: 40px 20px;
 }
 
-
-
-/* Aurora */
+/* Aurora Background */
 
 .aurora {
-
-
-    position:absolute;
-
-
-    width:700px;
-
-
-    height:700px;
-
-
-    background:
-
-    radial-gradient(
-    circle,
-    #00ffff,
-    transparent 60%
-    );
-
-
-    filter:blur(120px);
-
-
-    animation:move 8s infinite alternate;
-
-
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, #00ffff, transparent 60%);
+    filter: blur(120px);
+    animation: move 8s infinite alternate;
+    z-index: 0;
 }
-
-
 
 @keyframes move {
+    from {
+        transform: translate(-200px, -100px);
+    }
 
-
-from{
-
-transform:translate(-200px,-100px);
-
+    to {
+        transform: translate(200px, 100px);
+    }
 }
-
-
-to{
-
-transform:translate(200px,100px);
-
-}
-
-
-}
-
-
-
-
 
 /* Layout */
 
 .hero-container {
+    position: relative;
+    z-index: 2;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
 
-    display:flex;
-
-
-    align-items:center;
-
-
-    justify-content:center;
-
-
-    gap:60px;
-
-
-    width:100%;
-
-
-    max-width:1200px;
-
-
+    width: 100%;
+    max-width: 1250px;
 }
 
-
-
-
-
-/* Card */
-
+/* Glass Card */
 
 .hero-card {
+    width: 600px;
+    padding: 40px;
 
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(20px);
 
-    width:600px;
+    border-radius: 30px;
 
+    border: 1px solid rgba(0,255,255,.25);
 
-    padding:40px;
+    text-align: center;
 
+    color: white;
 
-    background:
-
-    rgba(255,255,255,0.08);
-
-
-    backdrop-filter:blur(20px);
-
-
-    border-radius:30px;
-
-
-    border:
-
-    1px solid rgba(0,255,255,0.25);
-
-
-    text-align:center;
-
-
-    color:white;
-
-
-    box-shadow:
-
-    0 0 40px rgba(0,255,255,0.15);
-
-
+    box-shadow: 0 0 40px rgba(0,255,255,.15);
 }
-
-
-
-
 
 /* Profile */
 
-
 .profile-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: auto;
 
+    padding: 5px;
 
-    width:140px;
+    border-radius: 50%;
 
-
-    height:140px;
-
-
-    margin:auto;
-
-
-    padding:5px;
-
-
-    border-radius:50%;
-
-
-    background:
-
-    linear-gradient(
-    45deg,
-    #00ffff,
-    #8a2be2
-    );
-
-
+    background: linear-gradient(45deg,#00ffff,#8a2be2);
 }
-
-
 
 .profile-wrapper img {
-
-
-    width:100%;
-
-
-    height:100%;
-
-
-    object-fit:cover;
-
-
-    border-radius:50%;
-
-
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
-
-
-
-
 
 /* Name */
 
-
 .hero-name {
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: 2px;
 
+    margin: 22px 0 12px;
 
-    font-size:52px;
+    background: linear-gradient(90deg,#00ffff,#8a2be2);
 
-
-    font-weight:900;
-
-
-    letter-spacing:2px;
-
-
-    margin:20px 0 10px;
-
-
-    background:
-
-    linear-gradient(
-    90deg,
-    #00ffff,
-    #8a2be2
-    );
-
-
-    -webkit-background-clip:text;
-
-
-    -webkit-text-fill-color:transparent;
-
-
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-
-
-
+/* Role */
 
 .hero-role {
-
-
-    color:#00ffff;
-
-
-    font-size:24px;
-
-
+    color: #00ffff;
+    font-size: 24px;
+    margin-bottom: 18px;
 }
 
-
-
-
+/* Description */
 
 .hero-card p {
-
-
-    color:#cbd5e1;
-
-
-    line-height:1.6;
-
-
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 25px;
 }
-
-
-
-
 
 /* Badges */
 
-
 .badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
 
-
-    display:flex;
-
-
-    justify-content:center;
-
-
-    flex-wrap:wrap;
-
-
-    gap:12px;
-
-
-    margin:25px 0;
-
-
+    margin-bottom: 35px;
 }
-
-
 
 .badges span {
+    padding: 10px 18px;
+    border-radius: 30px;
 
+    background: rgba(0,255,255,.12);
 
-    padding:10px 18px;
+    border: 1px solid #00ffff;
 
+    font-size: 14px;
 
-    border-radius:20px;
-
-
-    background:
-
-    rgba(0,255,255,0.12);
-
-
-    border:
-
-    1px solid #00ffff;
-
-
+    transition: .3s;
 }
 
-
-
-
+.badges span:hover {
+    transform: translateY(-3px);
+    background: rgba(0,255,255,.2);
+}
 
 /* Buttons */
 
-
 .buttons {
-
-
-    display:flex;
-
-
-    justify-content:center;
-
-
-    gap:15px;
-
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
 }
-
-
 
 .buttons a {
+    padding: 13px 28px;
 
+    border-radius: 30px;
 
-    padding:12px 25px;
+    text-decoration: none;
 
+    color: white;
 
-    border-radius:25px;
+    font-weight: 600;
 
+    background: linear-gradient(45deg,#2563eb,#9333ea);
 
-    color:white;
-
-
-    text-decoration:none;
-
-
-    background:
-
-    linear-gradient(
-    45deg,
-    #2563eb,
-    #9333ea
-    );
-
-
+    transition: .3s ease;
 }
 
+.buttons a:hover {
+    transform: translateY(-4px);
 
+    box-shadow: 0 0 20px rgba(37,99,235,.5);
+}
 
+/* Resume Button */
 
+.resume-btn {
+    background: linear-gradient(45deg,#00d9ff,#00bfff) !important;
+    color: #000 !important;
+    font-weight: 700;
+}
+
+.resume-btn:hover {
+    box-shadow: 0 0 25px #00d9ff;
+    transform: translateY(-4px);
+}
 
 /* Responsive */
 
+@media (max-width:900px){
 
-@media(max-width:900px){
+.hero-container{
+    flex-direction:column;
+}
+
+.hero-card{
+    width:95%;
+}
+
+.hero-name{
+    font-size:42px;
+}
+
+.hero-role{
+    font-size:20px;
+}
+
+.buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.buttons a{
+    width:220px;
+}
+}
+/* Extra Small Mobile Devices */
+
+@media (max-width:480px){
+
+
+.hero{
+
+padding:100px 15px 40px;
+
+min-height:auto;
+
+}
+
 
 
 .hero-container{
 
-
-    flex-direction:column;
-
+gap:30px;
 
 }
 
@@ -400,11 +245,116 @@ transform:translate(200px,100px);
 
 .hero-card{
 
+width:100%;
 
-    width:95%;
+padding:25px 15px;
 
+border-radius:20px;
 
 }
+
+
+
+.profile-wrapper{
+
+width:120px;
+
+height:120px;
+
+}
+
+
+
+.hero-name{
+
+font-size:34px;
+
+margin-top:18px;
+
+}
+
+
+
+.hero-role{
+
+font-size:18px;
+
+}
+
+
+
+.hero-card p{
+
+font-size:14px;
+
+line-height:1.6;
+
+}
+
+
+
+.badges{
+
+gap:8px;
+
+margin-bottom:25px;
+
+}
+
+
+
+.badges span{
+
+font-size:12px;
+
+padding:8px 14px;
+
+}
+
+
+
+.buttons{
+
+gap:12px;
+
+}
+
+
+
+.buttons a{
+
+width:100%;
+
+max-width:260px;
+
+padding:12px 20px;
+
+}
+
+
+
+/* SOC Terminal */
+
+.soc-terminal{
+
+width:100%;
+
+transform:scale(.95);
+
+}
+
+
+
+.aurora{
+
+width:400px;
+
+height:400px;
+
+filter:blur(80px);
+
+}
+
 
 
 }
